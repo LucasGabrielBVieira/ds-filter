@@ -1,13 +1,22 @@
+import { ProductDTO } from '../../models/product-dto'
 import './style.css'
 
-function Listing() {
+type Props = {
+    listProducts: ProductDTO[]
+}
+
+function Listing({ listProducts }: Props) {
 
     return (
         <section className='listing-container pd20'>
-            <div className='cart-product'>
-                <h2>PC Gamer Pro</h2>
-                <p>R$ 1200.00</p>
-            </div>
+            { listProducts &&
+                listProducts.map(product => (
+                    <div key={product.id} className='cart-product'>
+                        <h2>{product.name}</h2>
+                        <p>R$ {product.price}</p>
+                    </div>
+                ))
+            }
         </section>
     )
 
