@@ -1,0 +1,20 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+    --color-bg-primary: #55Bc04;
+    --color-bg-secondary: #fff;
+    --color-bg-tertiary: #6f6f6f;
+
+    --color-font-primary: #fff;
+    --color-font-secondary: #6f6f6f;
+    --color-font-tertiary: #55bc04;
+
+    --color-font-placeholder: #c2c2c2;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--color-bg-secondary);
+}
