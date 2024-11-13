@@ -1,0 +1,21 @@
+.header-container {
+    background-color: var(--color-bg-primary);
+    height: 70px;
+    display: flex;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container h1 {
+    font-size: 24px;
+    color: var(--color-font-primary);
+}
+
+.nav-container p {
+    font-size: 12px;
+    color: var(--color-font-primary);
+}

@@ -3,7 +3,7 @@
 
     --color-bg-primary: #55Bc04;
     --color-bg-secondary: #fff;
-    --color-bg-tertiary: #6f6f6f;
+    --color-bg-tertiary: #c2c2c2;
 
     --color-font-primary: #fff;
     --color-font-secondary: #6f6f6f;
@@ -12,9 +12,26 @@
     --color-font-placeholder: #c2c2c2;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body { 
+    background-color: var(--color-bg-tertiary);
+}
+
 .container {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
-    background-color: var(--color-bg-secondary);
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.pd20 {
+    padding: 20px;
 }
